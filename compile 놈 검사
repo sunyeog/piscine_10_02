@@ -1,0 +1,1 @@
+or d in $(find . -type d | grep ex); do norminette -R CheckForbiddenSourceHeader $d; cc -Wall -Wextra -Werror -fsyntax-only $d/* && echo $d compile success! ; done
